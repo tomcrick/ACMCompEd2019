@@ -1,0 +1,130 @@
+%%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
+\documentclass[sigconf]{acmart}
+\usepackage{paralist}
+\usepackage{url}
+\usepackage[hyphenbreaks]{breakurl}
+
+\def\UrlBreaks{\do\/\do-}
+
+%%%% As of March 2017, [siggraph] is no longer used. Please use sigconf (above) for SIGGRAPH conferences.
+
+%%%% Proceedings format for SIGPLAN conferences 
+% \documentclass[sigplan, anonymous, review]{acmart}
+
+%%%% Proceedings format for SIGCHI conferences
+% \documentclass[sigchi, review]{acmart}
+
+%%%% To use the SIGCHI extended abstract template, please visit
+% https://www.overleaf.com/read/zzzfqvkmrfzn
+
+\usepackage{booktabs} % For formal tables
+
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+\copyrightyear{2018}
+\acmYear{2018}
+\setcopyright{acmlicensed}
+\acmConference[Koli Calling '18]{18th Koli Calling International Conference on Computing Education Research}{Koli, Finland}
+% ACM had "Computing" instead of Computer, please update
+%\acmBooktitle{}
+%\acmPrice{15.00}
+%\acmDOI{10.1145/3159450.3159547}
+%\acmISBN{978-1-4503-5103-4/18/02}
+% This slight change to the code may also save 1 or 2 lines of space.
+
+% removes the headers from each page per the preparation instructions, as these are not needed and will be updated with the chairs' actual session names during the pagination/indexing process:
+\fancyhead{}
+
+\begin{document}
+\title{Ioc TBC}
+%\titlenote{}
+%\subtitle{Extended Abstract}
+%\subtitlenote{}
+
+% need other authors?
+\author{James H. Davenport}
+\affiliation{%
+  \institution{University of Bath}
+  \streetaddress{}
+  \city{Bath} 
+  \country{United Kingdom}
+}
+\email{j.h.davenport@bath.ac.uk}
+
+\author{Rachid Hourizi}
+\affiliation{%
+  \institution{University of Bath}
+  \streetaddress{}
+  \city{Bath} 
+  \country{United Kingdom}
+}
+\email{r.hourizi@bath.ac.uk}
+
+\author{Tom Crick}
+\affiliation{%
+  \institution{Swansea University}
+  \streetaddress{}
+  \city{Swansea} 
+  \country{United Kingdom}
+}
+\email{thomas.crick@swansea.ac.uk}
+
+ 
+% The default list of authors is too long for headers}
+%\renewcommand{\shortauthors}{Davenport and Crick}
+
+
+\begin{abstract}
+Abstract here...
+\end{abstract}
+
+\keywords{TBC}
+
+\maketitle
+
+% From CfP:
+% Short papers (up to 5 pages) focus on dissemination and discussion of new ideas in computing education practice or research that merit wider awareness and discussion within the community. They can present preliminary results of new educational innovations, present and discuss novel educational technologies, report work-in-progress research (including promising systems or tools that have not yet been evaluated and/or adopted extensively), or raise issues of significance for the development of the discipline, such as long-term strategic needs for computing education and curricula. All short papers are expected to have an appropriate coverage of literature to support the ideas and arguments that they present. Because it lacks some elements of a research paper, a short paper is evaluated mainly by its anticipated impact on discussions during the conference and possible future contribution to the field of computing education.
+
+\section{Introduction}
+Superficially, the outlook for computing graduates in the UK looks excellent. \cite[p.~74]{UKCES2015b} states
+\begin{quote}
+the digital sub-sector will need 518,000 workers for roles in the three highest skilled occupational groups. However, over the last ten years only 164,000 individuals graduated from a first degree in computer science.
+\end{quote}
+Quoting this, the author of a UK Government-commissioned report \cite{Shadbolt2016a} writes
+\begin{quote}
+In this context, apparently high rates of unemployment amongst graduates of Computer Sciences and other STEM courses demanded an explanation.
+\end{quote}
+Overall framing for the paper, etc
+
+\section{UK Policy Context}
+Set the scene -- UK digital skills, CS ed reforn, digital economy, etc
+
+Cite previous work on programming~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018}
+
+Cite previous policy-related work~\cite{crick+sentance:2011,brown-et-al-sigcse2013,brown-et-al-toce2014,crick+moller-wipsce2015}
+
+\section{Institute of Coding}
+% From CfP:
+% Short papers (up to 5 pages) focus on dissemination and discussion of new ideas in computing education practice or research that merit wider awareness and discussion within the community. They can present preliminary results of new educational innovations...
+
+\section{Anticipated Impact}
+
+\section{Conclusions and Future Work}
+
+%\section{Acknowledgements}
+%Cite funding?
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{kolicalling2018} 
+
+\end{document}
