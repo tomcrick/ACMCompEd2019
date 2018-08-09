@@ -50,7 +50,6 @@
 %\subtitle{Extended Abstract}
 %\subtitlenote{}
 
-% need other authors?
 \author{James H. Davenport}
 \affiliation{%
   \institution{University of Bath}
@@ -80,11 +79,11 @@
 
  
 % The default list of authors is too long for headers}
-%\renewcommand{\shortauthors}{Davenport and Crick}
+%\renewcommand{\shortauthors}{Davenport, Hourizi and Crick}
 
 
 \begin{abstract}
-Abstract here...
+% abstract to do at the end
 \end{abstract}
 
 \keywords{TBC}
@@ -92,7 +91,25 @@ Abstract here...
 \maketitle
 
 % From CfP:
-% Short papers (up to 5 pages) focus on dissemination and discussion of new ideas in computing education practice or research that merit wider awareness and discussion within the community. They can present preliminary results of new educational innovations, present and discuss novel educational technologies, report work-in-progress research (including promising systems or tools that have not yet been evaluated and/or adopted extensively), or raise issues of significance for the development of the discipline, such as long-term strategic needs for computing education and curricula. All short papers are expected to have an appropriate coverage of literature to support the ideas and arguments that they present. Because it lacks some elements of a research paper, a short paper is evaluated mainly by its anticipated impact on discussions during the conference and possible future contribution to the field of computing education.
+% Short papers (up to 5 pages) focus on dissemination and discussion
+% of new ideas in computing education practice or research that merit
+% wider awareness and discussion within the community. They can present
+% preliminary results of new educational innovations, present and
+% discuss novel educational technologies, report work-in-progress
+% research (including promising systems or tools that have not yet been
+% evaluated and/or adopted extensively), or raise issues of significance
+% for the development of the discipline, such as long-term strategic
+% needs for computing education and curricula. All short papers are
+% expected to have an appropriate coverage of literature to support the
+% ideas and arguments that they present. Because it lacks some elements
+% of a research paper, a short paper is evaluated mainly by its
+% anticipated impact on discussions during the conference and possible
+% future contribution to the field of computing education.
+
+% TC: need more UK context here, I can add this -- do we want to have
+% this framed as a paper to justify/introduce the IoC, as well as
+% other UK interventions? Framed as a discussion piece with
+% transferability elsewhere?
 
 \section{Introduction}
 Superficially, the employment outlook for computing graduates in the UK looks excellent. \cite[p.~74]{UKCES2015b} states
@@ -100,9 +117,14 @@ Superficially, the employment outlook for computing graduates in the UK looks ex
 the digital sub-sector will need 518,000 workers for roles in the three highest skilled occupational groups. However, over the last ten years only 164,000 individuals graduated from a first degree in computer science.
 \end{quote}
 This is profitable for the individual: according to \cite[Figure 4]{BIS2011a}, ``mathematical and computer sciences'' have the second highest earnings return of all subjects (beaten only by ``medicine and dentistry'').
-The country profits from this as well: according to \cite[p.~16]{BIS2011a}, this is, per head, the fourth most beneficial subject to the Exchequer.
+The country profits from this as well: according to
+\cite[p.~16]{BIS2011a}, this is, per head, the fourth most beneficial
+subject to the Exchequer.
+
 \section{So What's the problem}
-Despite the headline success in \cite{BIS2011a}, the employment figures are not great, and the earnings data are patchy.
+Despite the headline success in \cite{BIS2011a}, the employment
+figures are not great, and the earnings data are patchy.
+
 \subsection{Employment}
 Quoting \cite{UKCES2015b}, the author of a UK Government-commissioned report \cite{Shadbolt2016a} writes
 \begin{quote}
@@ -116,14 +138,17 @@ A significant explanation is ``There are notable differences in the characterist
 \end{description}
 Mature, BME and LPN students all find getting jobs more difficult.
 \par
-However, for those students that do find jobs, the data are better, showing \cite[Figure 6]{Shadbolt2016a} fewer students in ``non-graduate jobs'' or low-earning jobs than in STEM as a whole.
+However, for those students that do find jobs, the data are better,
+showing \cite[Figure 6]{Shadbolt2016a} fewer students in
+``non-graduate jobs'' or low-earning jobs than in STEM as a whole.
+
 \subsection{Earnings}
 If we look beyond purely getting jobs to the earnings\footnote{Clearly not the only measure of job quality, or contribution to society, but at least it's measurable, and has been measured in the LEO dataset \cite{DfE2017a}, which tracks individuals through school, university and into the labour market, combining educational, tax and benefits data.}, the position (as described in \cite{DfE2018d}, and presented to the public in \cite{BBC2018f}, which also allows the reader to break down the data by university and subject.) is even less clear on a microscopic level, though on a macroscopic level it bears out much of what \cite{Shadbolt2016a} said.
 
 On the macroscopic level, the reader should consider \cite[Table 5]{DfE2018d}. We focus on the `Men' data as presented here, as there are many more than there are women, though the effects are similar. This shows that an OLS (``Ordinary Least Squares'') fit shown that a man reading Computing would earn 3.3\% more than had he read a subject at random. If one corrects for prior attainment, this rises to 10.5\%, and 12.6\% if other factors are taken into account. For reasons explained in \cite[\S4.2]{DfE2018d}, the authors prefer IPRWA (``Inverse Probability Weighted Regression Adjustment''), and this moves the earning difference to 14.7\%. For men, the overall effect of these adjustments is to move Computing from being middle-of-the-pack \cite[Figure 15]{DfE2018d} to fourth best  \cite[Figure 17]{DfE2018d}, and for women is moves to seventh best  \cite[Figure 16]{DfE2018d}.
 
 
-Overall framing for the paper, etc
+%Overall framing for the paper, etc
 
 \section{UK Policy Context}
 It is worth recalling that, after the Government's acceptance of the Browne report \cite{BIS2010a}, students in England pay probably the highest\footnote{Or possibly second-highest after US students, but the US averages in \cite[Table B5.1]{OECD2016a} conceal an enormous variation.} prices in the world for undergraduate education: between \pounds6000 and \pounds9000/year for tuition alone. While this is normally covered by student loans repaid on an income-contingent basis, essentially through a 9\% income tax premium, there is evidence \cite{CallenderMason2017a} that this ``contribute[s] to lower rates of planned H[igher] E[ducation] participation by lower-class students''.
@@ -139,15 +164,32 @@ Cite previous policy-related work~\cite{crick+sentance:2011,brown-et-al-sigcse20
 \section{Institute of Coding}
 Formally announced in \cite{DfE2018a}, but foreshadowed in \cite{HMG2015a}.
 % From CfP:
-% Short papers (up to 5 pages) focus on dissemination and discussion of new ideas in computing education practice or research that merit wider awareness and discussion within the community. They can present preliminary results of new educational innovations...
+% Short papers (up to 5 pages) focus on dissemination and discussion
+% of new ideas in computing education practice or research that merit
+% wider awareness and discussion within the community. They can present
+% preliminary results of new educational innovations...
+
+% TC: so are we going to talk about the IoC "national" model, with
+% industry matched funding, etc?
 
 \section{Anticipated Impact}
 
 \section{Conclusions and Future Work}
 
+% TC: what is the main takehome from this paper? Replicability to
+% other jurisdictions? Introducing the IoC as an effective
+% educational/industrial collaboerative intervention? Recognising all
+% of the mistakes/missed opportunitirs from before, even though
+% significant government policy in this space, etc? Global
+% competitiveness, etc
+% also: directly linking to CAS/BCS work, curriculum+quals reform, pipelines, perceptions?
+
 \section{Acknowledgements}
-This work was supported by the Institute of Coding which received pounds20m of funding from the Office for Students, and support from The Higher Education Funding Council for Wales (HEFCW).
-The first author is grateful to Matt Dickson (Bath) for discussions about \cite{DfE2018d}, but any mistakes are the authors' alone.
+This work was supported by the Institute of Coding which received
+pounds20m of funding from the Office for Students, and support from
+the Higher Education Funding Council for Wales (HEFCW).  The first
+author is grateful to Matt Dickson (Bath) for discussions about
+\cite{DfE2018d}, but any mistakes are the authors' alone.
 
 
 \bibliographystyle{ACM-Reference-Format}
