@@ -145,8 +145,11 @@ showing \cite[Figure 6]{Shadbolt2016a} fewer students in
 \subsection{Earnings}
 If we look beyond purely getting jobs to the earnings\footnote{Clearly not the only measure of job quality, or contribution to society, but at least it's measurable, and has been measured in the LEO dataset \cite{DfE2017a}, which tracks individuals through school, university and into the labour market, combining educational, tax and benefits data.}, the position (as described in \cite{DfE2018d}, and presented to the public in \cite{BBC2018f}, which also allows the reader to break down the data by university and subject.) is even less clear on a microscopic level, though on a macroscopic level it bears out much of what \cite{Shadbolt2016a} said.
 
-On the macroscopic level, the reader should consider \cite[Table 5]{DfE2018d}. We focus on the `Men' data as presented here, as there are many more than there are women, though the effects are similar. This shows that an OLS (``Ordinary Least Squares'') fit shown that a man reading Computing would earn 3.3\% more than had he read a subject at random. If one corrects for prior attainment, this rises to 10.5\%, and 12.6\% if other factors are taken into account. For reasons explained in \cite[\S4.2]{DfE2018d}, the authors prefer IPRWA (``Inverse Probability Weighted Regression Adjustment''), and this moves the earning difference to 14.7\%. For men, the overall effect of these adjustments is to move Computing from being middle-of-the-pack \cite[Figure 15]{DfE2018d} to fourth best  \cite[Figure 17]{DfE2018d}, and for women is moves to seventh best  \cite[Figure 16]{DfE2018d}.
+On the macroscopic level, the reader should consider \cite[Table 5]{DfE2018d}. We focus on the `Men' data as presented here, as there are (regrettably) many more than there are women in the cohorts, though the effects are similar. This shows that an OLS (``Ordinary Least Squares'') fit shown that a man reading Computing would earn 3.3\% more than had he read a subject at random. If one corrects for prior attainment, this rises to 10.5\%, and 12.6\% if other factors are taken into account. For reasons explained in \cite[\S4.2]{DfE2018d}, the authors prefer IPRWA (``Inverse Probability Weighted Regression Adjustment''), and this moves the earning difference to 14.7\%. For men, the overall effect of these adjustments is to move Computing from being middle-of-the-pack \cite[Figure 15]{DfE2018d} to fourth best  \cite[Figure 17]{DfE2018d}, and for women is moves to seventh best  \cite[Figure 16]{DfE2018d}.
 
+\subsection{Per-University Earnings}
+\cite{BBC2018f} allows one to break down the data underpinning \cite{DfE2018d}, and the Computing figures are challenging.  
+Salary premiums, allowing for the factors described above, are reported separately for men and women, and only if there were at least 50 students of that gender in the five cohorts (graduation 2007--8 to graduation 2011-12) considered. This means that, of the 82 English universities reporting computing, 80 report male data and 30 report female data --- 28 report both. Looking at the 28, one's first impression is that the male and female data are uncorrelated: for example the two universities with male premiums just above +\pounds2500 have female premiums of +\pounds9325 and -\pounds5793. There is in fact a positive correlation, but a fairly weak one. 
 
 %Overall framing for the paper, etc
 
@@ -161,6 +164,26 @@ Cite previous work on programming~\cite{davenport-et-al:latice2016,murphy-et-al:
 
 Cite previous policy-related work~\cite{crick+sentance:2011,brown-et-al-sigcse2013,brown-et-al-toce2014,crick+moller-wipsce2015}
 
+\section{Skills mismatch}
+There is a widespread and longstanding complaint that ``students aren't industry-ready'', or ``there is a skills mismatch''. Some of this is due to a misapprehension on the part of employers (generally those outside the IT industry itself, but seeking to hire people wih ``10 years experience of programming in Ruby''), but much of it is genuine. One of the main challenges for the university community is to understand this complaint.
+
+\subsection{Sandwich Years}
+In the U.K. context, a university course that includes a period working in industry (which may include government, charity etc.) is generally called ``sandwich'', and in North America the term ``co-op'' is generally used. The most common model in Computing in England, where the vast majority of students study three-year Bachelor's degrees, is a year's placement in industry between the second and final years of study. This is remarkably successful in computing. The University of Bath has run such courses since its founding (1966), with about 80\% of students opting to take the sandwich year. There is statistical evidence for its success wherever it is used in the U.K.\footnote{And at least anecdotal evidence elsewhere: ``the co-op system is a major reason for our [University of Waterloo] success'' \cite{Watt2017a}.}:
+\begin{quote}
+those studying sandwich courses enjoy the lowest levels of unemployment (6\% sandwich vs 15\% non-sandwich), the lowest levels of non-graduate level employment (6\% sandwich vs 25\% non-sandwich), and graduates from sandwich courses are twice as likely to be earning over \pounds20,000 compared to those who did a standard degree. \cite[\P2.5]{Shadbolt2016a}
+\end{quote}
+A simplistic remedy would be to require that all students study sandwich degrees, but this has numerous objections:
+\begin{enumerate}
+\item Some students do not wish to, often for valid reasons;
+\item The supply of employers willing to offer such placements is limited, and often they are only offered to a limited nmber of universities with whom the employer has built up relations, often going back decades;
+\item The university needs to invest in the process: a sandwich year is not a matter of simply allowing studnts to intermit their studies.
+\end{enumerate}
+Hence we should ask ourselves \emph{why} such courses are so successful.  There are, it seems to the authors, two classes of reasons: those instrinsic to the sandwich process, and the skills the sandwich process confers. The first class is easy to understand: the employer can view the year as a year-long assessment phase before deciding whether to offer a permanent job. Bath's experience is that about 2/3 of sandwich placements result in job offers to the student. However, it is the second class that we need to investigate. A major one, brought out repeatedly by students returning from placement, is team working.
+\subsection{Team/Group working}
+``Teamwork'' is often identified as a key skill \cite[and many others]{ArcherDavidson2008}. Simplistically, then, universities should teach it. Indeed, the British Computer Society has long required this of degrees it accredits:
+\begin{quote}
+An ability to work as a member of a development team recognising the different roles within a team and different ways of organising teams \cite[Requirement 2.3.1]{BCS2018a}.
+\end{quote}
 \section{Institute of Coding}
 Formally announced in \cite{DfE2018a}, but foreshadowed in \cite{HMG2015a}.
 % From CfP:
@@ -186,7 +209,7 @@ Formally announced in \cite{DfE2018a}, but foreshadowed in \cite{HMG2015a}.
 
 \section{Acknowledgements}
 This work was supported by the Institute of Coding which received
-pounds20m of funding from the Office for Students, and support from
+\pounds20m of funding from the Office for Students, and support from
 the Higher Education Funding Council for Wales (HEFCW).  The first
 author is grateful to Matt Dickson (Bath) for discussions about
 \cite{DfE2018d}, but any mistakes are the authors' alone.
