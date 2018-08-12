@@ -1,0 +1,102 @@
+BBC=xlsread('kolicalling2018.xlsx','BBCCSboth');
+BBC(:,1)    % should be men data; last three columns statistics
+
+ans =
+
+   1.0e+04 *
+
+    1.2531
+    1.0617
+    1.0533
+    0.8534
+    0.8008
+    0.7260
+    0.7125
+    0.7041
+    0.5286
+    0.4132
+    0.4096
+    0.3291
+    0.2653
+    0.2593
+    0.2425
+    0.1049
+    0.0670
+    0.0523
+    0.0249
+   -0.0150
+   -0.0285
+   -0.0508
+   -0.0532
+   -0.1082
+   -0.1662
+   -0.1938
+   -0.2867
+   -0.3603
+    0.3071
+    1.2531
+   -0.3603
+
+BBC(:,2)    % should be women data; last three columns statistics
+
+ans =
+
+   1.0e+04 *
+
+    0.3068
+    0.3097
+    1.1795
+    0.6633
+    0.3752
+    0.3240
+    0.9795
+    0.5264
+    0.9267
+    0.2063
+    0.3523
+    0.0423
+    0.9325
+   -0.5713
+    0.3354
+    0.0915
+    0.2666
+    0.0959
+   -0.1250
+    0.3102
+    0.3027
+   -0.1806
+   -0.8059
+    0.1135
+    0.3869
+   -0.2084
+   -0.2167
+    0.2663
+    0.2566
+    1.1795
+   -0.8059
+
+plot(BBC(1:28,1),BBC(1:28,2))
+xlabel('Male salary premium')
+ylabel('Female salary premium')
+title('Male versus Female salary premium')
+lm=fitlm(BBC(1:28,1),BBC(1:28,2),'linear')
+
+lm = 
+
+
+Linear regression model:
+    y ~ 1 + x1
+
+Estimated Coefficients:
+                   <strong>Estimate</strong><strong>      SE   </strong><strong>    tStat </strong><strong>     pValue  </strong>
+                   <strong>________</strong>    <strong>_______</strong>    <strong>______</strong>    <strong>_________</strong>
+
+    <strong>(Intercept)</strong>     926.72      882.12    1.0506      0.30313
+    <strong>x1         </strong>    0.53388     0.16561    3.2237    0.0033972
+
+
+Number of observations: 28, Error degrees of freedom: 26
+Root Mean Squared Error: 3.81e+03
+R-squared: 0.286,  Adjusted R-Squared 0.258
+F-statistic vs. constant model: 10.4, p-value = 0.0034
+diary()
