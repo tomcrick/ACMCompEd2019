@@ -1,0 +1,71 @@
+BBC=xlsread('kolicalling2018.xlsx','BBCCSboth');
+WomenK=BBC(1:28,2)/1000;
+MenK=BBC(1:28,1)/1000;
+M=fitlm(MenK,WomenK)
+
+M = 
+
+
+Linear regression model:
+    y ~ 1 + x1
+
+Estimated Coefficients:
+                   <strong>Estimate</strong><strong>      SE   </strong><strong>    tStat </strong><strong>     pValue  </strong>
+                   <strong>________</strong>    <strong>_______</strong>    <strong>______</strong>    <strong>_________</strong>
+
+    <strong>(Intercept)</strong>    0.92672     0.88212    1.0506      0.30313
+    <strong>x1         </strong>    0.53388     0.16561    3.2237    0.0033972
+
+
+Number of observations: 28, Error degrees of freedom: 26
+Root Mean Squared Error: 3.81
+R-squared: 0.286,  Adjusted R-Squared 0.258
+F-statistic vs. constant model: 10.4, p-value = 0.0034
+v=[-4:14]
+
+v =
+
+  Columns 1 through 14
+
+    -4    -3    -2    -1     0     1     2     3     4     5     6     7     8     9
+
+  Columns 15 through 19
+
+    10    11    12    13    14
+
+best=v*0.53388+0.96672
+
+best =
+
+  Columns 1 through 8
+
+   -1.1688   -0.6349   -0.1010    0.4328    0.9667    1.5006    2.0345    2.5684
+
+  Columns 9 through 16
+
+    3.1022    3.6361    4.1700    4.7039    5.2378    5.7716    6.3055    6.8394
+
+  Columns 17 through 19
+
+    7.3733    7.9072    8.4410
+
+ideal=v+4
+
+ideal =
+
+  Columns 1 through 14
+
+     0     1     2     3     4     5     6     7     8     9    10    11    12    13
+
+  Columns 15 through 19
+
+    14    15    16    17    18
+
+plot(v,best,v,ideal)
+hold on
+scatter(MenK,WomenK)
+xlabel('Men''s premium (£K/year)')
+ylabel('Women''s premium (£K/year)')
+title('Male/Female salary premium for reading Computing')
+legend('best fit','no discrimination')
+diary()
