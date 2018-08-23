@@ -1,10 +1,10 @@
-targets = kolicalling2018.pdf
+targets = SIGSE2019.pdf
 
 all: $(targets)
 
 pdflatex = pdflatex -interaction=errorstopmode -halt-on-error
 
-%.pdf:  %.tex kolicalling2018.bib
+%.pdf:  %.tex SIGSE2019.bib
 	$(pdflatex) $<
 	bibtex $*
 	$(pdflatex) $<
