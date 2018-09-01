@@ -1,4 +1,5 @@
 %%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
+\newif\ifanon\anontrue
 \documentclass[sigconf,anonymous]{acmart}
 \usepackage{paralist}
 \usepackage{url}
@@ -595,10 +596,9 @@ perception -- and economic, societal and cultural importance -- of
 This work was supported by the Institute of Coding which received
 \pounds20m of funding from the Office for Students (OfS), as well as
 support from the Higher Education Funding Council for Wales (HEFCW).
-The first author is grateful to Matt Dickson (University of Bath) for
-discussions about \cite{DfE2018d}, but any mistakes are the authors'
-alone.
-
+\ifanon
+%The first author is grateful to Matt Dickson (University of Bath) for discussions about \cite{DfE2018d}, but any mistakes are the authors' alone.
+\fi
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{SIGCSE2019} 
