@@ -31,7 +31,7 @@
 \copyrightyear{2019}
 \acmYear{2019}
 \setcopyright{acmlicensed}
-\acmConference[SIGCSE '19]{The 3rd Computing Education Practice
+\acmConference[CEP  2019]{The 3rd Computing Education Practice
   Conference}{Jan 9, 2019}{Durham, UK}
 %\acmBooktitle{}
 %\acmPrice{15.00}
@@ -95,7 +95,7 @@
 \begin{abstract}
 The Institute of Coding is a new \pounds40m+ initiative by the UK
 Government to transform the digital skills profile of the country. In
-the context of significant national and international policy scrutiny, 
+the context of significant national and international political and policy scrutiny, 
 it responds to the apparently contradictory data that
 the country has a digital skills shortage across a variety of sectors,
 yet unemployed computing graduates every year. The Institute is a
@@ -106,13 +106,7 @@ versus ``deep education'', and managing expectations for the diverse
 digital, data and computational skills demands of employers across a
 wide range of economic sectors.
 
-All of this is taking place in the higher education/workforce domain
-at the same time as substantial levels of computer science curriculum
-reform across the four nations of the UK -- especially in England,
-with a new computing curriculum that first started in 2014, in which
-all children are expected to learn two programming languages, as well
-as wider computer science fundamentals and computational thinking
-skills.
+%All of this is taking place in the higher education/workforce domain at the same time as substantial levels of computer science curriculum reform across the four nations of the UK -- especially in England, with a new computing curriculum that first started in 2014, in which all children are expected to learn two programming languages, as well as wider computer science fundamentals and computational thinking skills.
 
 In this paper, we describe the background and evidence base for the
 Institute of Coding, its key themes and current activities, as
@@ -163,40 +157,21 @@ Institute to other nations or regions with similar ambitions.
 
 \maketitle
 
-% From CfP:
-% Short papers (up to 5 pages) focus on dissemination and discussion
-% of new ideas in computing education practice or research that merit
-% wider awareness and discussion within the community. They can present
-% preliminary results of new educational innovations, present and
-% discuss novel educational technologies, report work-in-progress
-% research (including promising systems or tools that have not yet been
-% evaluated and/or adopted extensively), or raise issues of significance
-% for the development of the discipline, such as long-term strategic
-% needs for computing education and curricula. All short papers are
-% expected to have an appropriate coverage of literature to support the
-% ideas and arguments that they present. Because it lacks some elements
-% of a research paper, a short paper is evaluated mainly by its
-% anticipated impact on discussions during the conference and possible
-% future contribution to the field of computing education.
 
 \section{Introduction}
 
-% TC: need more UK context here, I can add this -- do we want to have
-% this framed as a paper to justify/introduce the IoC, as well as
-% other UK interventions? Framed as a discussion piece with
-% transferability elsewhere?
-%Set the scene -- UK digital skills, CS ed reform, digital economy, etc
 
 We are frequently being told that this is ``the digital age'', and
-that we ``live in a knowledge economy''\footnote{Despite the debunking
-in \cite{Friesen2008}.}, with ``software eating the
+that we ``live in a knowledge economy'' %\footnote{Despite the debunking in \cite{Friesen2008}.}, 
+with ``software eating the
 world''~\cite{andreessen:2011}; the impact of digital on all of our
 lives is clear. From entertainment and communication, via the power
 and reach of a small number of social media platforms, with algorithms
 influencing what we see or making decisions that affect us every day;
 to education, health and social care, and innovation in public
-services~\cite{ecdsmsuk:2018}.
+services.%~\cite{ecdsmsuk:2018}.
 
+\iffalse
 \subsection{Defining the ``Digital Economy''}
 
 Providing a comprehensive definition of the `ICT' or `digital' sector
@@ -219,6 +194,7 @@ Industrial Strategy~\cite{ukis:2017}: from precision medicine,
 manufacturing and future materials, to creative industries clusters
 and next generation services, through to driverless cars and smart
 cities~\cite{tryfonas+crick:petra2018}.
+\fi 
 
 \subsection{Diversity, especially Gender}\label{sec:Gender}
 
@@ -246,7 +222,9 @@ mean by digital skills? In recent years, we have seen a multitude of
 policy reviews and reports from across government, academia, think
 tanks, learned societies and charities that have attempted to
 encapsulate some of the issues, as well as identifying potential
-solutions. At least three recent House of Commons and House of Lords
+solutions. 
+\iffalse
+At least three recent House of Commons and House of Lords
 Select Committee
 inquiries~\cite{ukholds:2015,ukhocst:2016,ukholc:2017} have, wholly or
 in part, focused on the `digital skills crisis'. They have made a
@@ -256,6 +234,7 @@ in infrastructure, developing effective pedagogies and the wider
 educational research base in the UK, through to terminology, fixing
 `leaky pipelines' and changing wider public perceptions of the
 discipline.
+\fi 
 
 Alongside substantial curriculum reform across the
 UK~\cite{crick+sentance:2011,brown-et-al:sigcse2013,brown-et-al:toce2014},
@@ -292,6 +271,7 @@ the Institute in Section~\ref{concl}.
 
 % and now in Lithuania \cite{Xinhua2018a}) to prisons \cite{Maher2018a}.
 
+\iffalse
 \subsubsection*{A Note on Terminology}
 
 While in many instances throughout this paper we will refer to the
@@ -302,6 +282,7 @@ England and Wales) due to the devolved funding model for many policy
 areas, including education and skills. We will attempt to be as clear
 as possible when referring to specific interventions across or between
 the four nations.
+\fi
 
 \section{So What's the Problem?}\label{problem}
 
@@ -329,8 +310,9 @@ report \cite{Shadbolt2016a} writes:
 \begin{quote} In this context, apparently high rates of
 unemployment\footnote{11.7\% six months after graduation (the standard
 UK measure) at the time of \cite{Shadbolt2016a}, compared with a STEM
-average of 8.4\%. Note, however, that Computing is 20\% of STEM
-\cite[Table 1]{Wakeham2016a}, so `STEM-less-Computing' has a 7.6\%
+average of 8.4\%. Note, however, that Computing is 20\% of STEM,
+%\cite[Table 1]{Wakeham2016a}, 
+so `STEM-less-Computing' has a 7.6\%
 unemployment rate.} amongst graduates of Computer Sciences and other
 STEM\footnote{STEM is ``Science, Technology, Engineering,
 Mathematics'' for \cite{Shadbolt2016a} and this paper.} courses
@@ -426,7 +408,11 @@ planned H[igher] E[ducation] participation by lower-class students''.
 %AH to write overview paragraph. But JHD will try.
 
 UK universities have been judged, very publicly, on their research
-for the last thirty years by the Research Assessment Exercise (RAE), and its successor the Research Evaluation Framework (REF). This has led to many complaints, largely justified, that teaching, because it is not measured, is not taken as seriously as research, certainly in some of the research-intensive universities. Similar comments in the USA can be found in \cite{Campbelletal2018a}. To counteract this, the Government introduced (first grades published in June 2017) a `` Teaching Excellence Framework'' (TEF)\footnote{Now renamed ``Teaching Excellence and Student Outcomes Framework'', which is somewhat more descriptive.}. The ostensible aim of the TEF was to evaluate the quality of HE provision for each Higher Education provider within the United Kingdom.
+for the last thirty years by the Research Assessment Exercise (RAE), and its successor the Research Evaluation Framework (REF). This has led to many complaints, largely justified, that teaching, because it is not measured, is not taken as seriously as research, certainly in some of the research-intensive universities. Similar comments in the USA can be found in \cite{Campbelletal2018a}. To counteract this, the Government introduced (first grades published in June 2017) a `` Teaching Excellence Framework'' (TEF)\footnote{Now renamed ``Teaching Excellence and Student Outcomes Framework'', which is somewhat more descriptive.}. 
+
+\iffalse
+
+The ostensible aim of the TEF was to evaluate the quality of HE provision for each Higher Education provider within the United Kingdom.
 The initial version of the TEF produced a university-wide assessment on a three-point (Gold-26\%/Silver-50\%/Bronze-24\%) scale. It in fact used no assessment of teaching as such, merely statistical data such as that used in \cite{Shadbolt2016a}.
 
 In 2018, following an Institutional-level review undertaken in the previous year, the Office for Students (OFS) conducted a pilot of a national  subject-based TEF. The objective was to provide sufficient data for prospective students to enable them to undertake an informed decision about their choice of University and subject of study. This was particularly pertinent to the UK context as the funding of Higher Education has shifted, following several policy changes, the latest being the
@@ -434,6 +420,7 @@ Browne report \cite{BIS2010a}, from students receiving means-tested Government g
 
 Fifty higher education providers participated in the 2018 pilot, reflecting the diverse range of UK HE within the sector. The pilot collated subjects into 7 groups with 142 subject panel members reviewing the provision. The subject panels consisted of members of the academic community, students, employers and representatives of the professional bodies. Reviewing panels rated a HE provider's subject provision as being either Gold, Silver or Bronze. The Computing subject was grouped with Engineering and Technology. The main goal of the pilot was to inform the development of the subject-TEF methodology to be adopted by the national roll-out currently scheduled for 2019/20. The framework evaluated subject-provision against 6 core metrics. Three of these came directly from the National Student Survey (teaching, academic support and assessment and feedback) one for continuation (retention) and two were related to employment (employment or further study/ highly skilled employment or further study). Reviewers are able to review a provider's metrics against a range of indicators %JHD was "stakeholders"
 including full/part-time students, ethnic diversity, gender, age profile etc. Additionally, supplementary statistics are provided to inform the panel members' review. These include teaching intensity (contact hours in all its various guises) and long-term employment/earnings as measured by the Longitudinal Education Outcomes (LEO) data \cite{DfE2017a}.
+\fi 
 
 The TEF's reliance on employment metrics pre-supposes a strong correlation between the quality of provision and the employment prospects/performance of the students. This can be challenging for some disciplines (e.g. income earning potential is not equally distributed across all subjects). The intention however is clear. In the context of students paying their own tuition fees, quality of provision is being linked to future employment prospects. This represents an opportunity for HE Computing provision. Those programmes, characteristic of most in computer science,  that contain a placement/internship, are professional accredited and whose curriculum is informed by an employer-led advisory board are well-placed to do well in the TEF. 
 
@@ -527,7 +514,7 @@ of degrees it accredits:
 recognising the different roles within a team and different ways of
 organising teams \cite[Requirement 2.3.1]{BCS2018a}.
 \end{quote}
-The problem is that group working is unpopular with students. Most of them have never experienced it in their academic work at school, and really dislike ``being dragged down'', as they generally put it, by others. In many countries, this wouldn't matter, but the UK has (many would say ``suffers from'', see, e.g. \cite{Cupples2015a}) the National Student Survey \cite{OfS2018a}. The results of this, notably the headline ``are you satisfied with your course'' question, are pored over intently by university management \cite[Myth 3]{OfS2018a}. As well as the quantitative scores, the students submit free-text responses, and it does not take many students complaining about the group work before the Pro-Vice-Chancellor (Teaching) or equivalent\footnote{Whose pay may well be linked to these scores.} is beating down the Director of Studies door, saying ``obviously you must abolish groupwork immediately''. Both the first and third authors have been Directors of Studies, and can vouch for this.
+The problem is that group working is unpopular with students. Most of them have never experienced it in their academic work at school, and really dislike ``being dragged down'', as they generally put it, by others. In many countries, this wouldn't matter, but the UK has the National Student Survey \cite{OfS2018a}. The results of this, notably the headline ``are you satisfied with your course'' question, are pored over intently by university management \cite[Myth 3]{OfS2018a}. As well as the quantitative scores, the students submit free-text responses, and it does not take many students complaining about the group work before the Pro-Vice-Chancellor (Teaching) or equivalent\footnote{Whose pay may well be linked to these scores.} is beating down the Director of Studies door, saying ``obviously you must abolish groupwork immediately''. Both the first and third authors have been Directors of Studies, and can vouch for this.
 
 However, a BCS-accredited course gives the response ``but our accreditation demands it'', whereupon the discussion can evolve into a more sensible debate about the size, shape and process of group working.
 \par
@@ -665,12 +652,12 @@ as well as bridging the gap between the expectations and evolving
 requirements of (higher) education and industry.
 
 The Institute of Coding is very much ``work in progress'': at the time
-of writing it was just over six months old.  The mere adumbration
+of writing it was just over nine months old.  The mere adumbration
 \cite{HMG2015a} prompted the research in
 \cite{murphy-et-al:programming2017}, and the various working groups
 round the themes are causing more discussion of computing pedagogy in
 the UK than the authors can ever remember, further reinforced by the
-recommendations in~\cite{rs:2017}.
+recommendations in~\cite{rs:2017}. In particular, it is providing a vehicle for better industrial engagement (as in \cite{Chapman2018c}).
 
 However, two overarching themes are apparent; firstly, such effort has
 to be viewed as a coordinated multi-pronged approach, requiring an
@@ -693,13 +680,7 @@ perception -- and economic, societal and cultural importance -- of
 
 % TC: what is the main takehome from this paper? Replicability to other jurisdictions? 
 % JHD: that's a bit parochial for SIGCSE
-% Introducing the IoC as an effective % educational/industrial collaborative intervention? 
-% JHD: yes indeed
-% Recognising all  of the mistakes/missed opportunities from before, even though
-% JHD: again parochial?
-% significant government policy in this space, etc? Global
-% competitiveness, etc
-% also: directly linking to CAS/BCS work, curriculum+quals reform, pipelines, perceptions?
+% JHD: Need to rethink this
 
 \section*{Acknowledgements}
 
