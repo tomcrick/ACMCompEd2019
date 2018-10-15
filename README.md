@@ -1,2 +1,2 @@
-# SIGCSE2019
-Paper for 50th ACM Technical Symposium on Computer Science Education (SIGCSE 2019)
+# ACMCompEd2019
+Paper for the ACM Global Computing Education Conference 2019 (and others)
