@@ -1,13 +1,31 @@
-Kyewords (five) - I suspect we can get away with key phrases
-1)
-2)
-3)
-4)
+Kyewords (five) - I suspect we can get away with key phrases. NEED TWO MORE
+1) Industry-Academia co-design
+2) Skill shortage
+3) Employability
+4) 
 5)
 
 
-Promotional abstract (up to 100 words).
+Promotional abstract (up to 100 words: nearly there).
 
-Session outline (up to 500 words).  ALso <3500 characters
+The Institute of Coding is a major (20M of Government money, matching industry
+money) initiative to address the national shortage of digital skills as well
+as respond to the surprising fact that computing graduates have relatively
+poor employment rates, and are drawn from a less diverse pool than one would
+like. As well as university students, we are also looking at digital
+professionals (with degree apprenticeships and short courses, all with
+substantial industrial involvement) and professionals in other occupations. We
+are producing a new co-designed industry standard, and researching
+blockchain-based skill accreditation.
+
+Session outline (up to 500 words: very much not there).  Also <3500 characters
+
+This session will be a presentation by one of the senior staff of the
+Institute of Coding, looking briefly at the rationale for the Institute,
+including the surprising statistics on employability and salary, its
+structure and mechanisms for industry involvement, and then a brief
+description of the various themes and progress to date. The aim will be to
+provide enough information to stimulate debate and discussion after the
+formal presentation. 
 
 
