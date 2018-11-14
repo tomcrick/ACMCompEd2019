@@ -1,4 +1,4 @@
-targets = CEP2019.pdf
+targets = CEP2019v2.pdf
 
 all: $(targets)
 
