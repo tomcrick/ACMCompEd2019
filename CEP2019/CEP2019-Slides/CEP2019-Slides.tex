@@ -1,0 +1,181 @@
+\def\AS#1{{\color{red}#1}}  % print O in red
+\def\AS#1{}       % don't print O
+\def\red#1{{\color{red}#1}}
+\def\blue#1{{\color{blue}#1}}
+\def\green#1{{\color{green}#1}}
+%\def\B{\red{$\cal C$}}
+\def\Book{\red{$\cal C$}}
+\def\J{\red{$\cal J$}}
+\def\redtt{\color{red}\tt}
+\def\greentt{\color{green}\tt}
+\font\manual=manfnt
+\def\dbend{{\manual\char127}}
+\def\eqq{{\buildrel?\over=}}
+\def\I{{\cal I}}
+\def\Z{{\bf Z}}
+\def\Q{{\bf Q}}
+\def\C{{\bf C}}
+\def\N{{\bf N}}
+\def\R{{\bf R}}
+\def\Oo{{\cal O}}
+\def\CL{\mathop{\rm CL}}
+\def\IDA{{}_{\rm DA}\int}
+\def\DDA{D_{\rm DA}}
+\def\arctanDA{\arctan_{\rm DA}}
+\def\logDA{\log_{\rm DA}}
+\def\cDA{constant${}_{\rm DA}$}
+\def\fracDDA#1#2{\frac{{\rm d}#1}{{\rm d}_{\rm DA}#2}}
+\def\Ied{{}_{\epsilon\delta}\int}
+\def\Ded{D_{\epsilon\delta}}
+\def\arctaned{\arctan_{\epsilon\delta}}
+\def\loged{\log_{\epsilon\delta}}
+\def\fracDed#1#2{\frac{{\rm d}#1}{{\rm d}_{\epsilon\delta}#2}}
+%\documentclass[notes=hide]{beamer}   % Without notes
+\documentclass[handout]{beamer}   % handout mode 
+\usepackage[final]{pdfpages}
+
+%\mode<presentation>
+
+\usetheme{Warsaw}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{color}
+\bibliographystyle{alphaurl}
+%\shorttitle{Institute of Coding}
+\title{The Institute of Coding:\\ Addressing the UK Digital Skills Crisis}
+\author{\quad Institute of Coding\quad\\(James Davenport, Bath)}
+%(Thanks to RJB for the improved title)}
+\institute{\url{https://instituteofcoding.org/}}%(visiting Waterloo)}
+\date{9 January 2019\\\includegraphics{IoC.png}}
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\begin{document}
+
+\frame{
+\titlepage
+}
+\begin{frame}[fragile]
+\frametitle{So What's the Problem?}
+Superficially, things look good:\par
+``the digital sub-sector will need 518,000 workers for
+roles in the three highest skilled occupational groups. However, over
+the last ten years only 164,000 individuals graduated from a first
+degree in computer science.'' \cite[p.~74]{UKCES2015b}
+\par\pause
+``In this context,
+apparently high rates of unemployment amongst graduates of Computer Sciences and other STEM courses
+demanded an explanation'' \cite{Shadbolt2016a} 
+\par\pause
+DLHE figures of 11.7\% versus 8.4\% for STEM (7.6\% for ``Rest of STEM''). \pause Much of this can be explained by he fact that Computer Science \emph{is} different.
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Computer Science is different}
+At least in terms of where it recruits and is done.
+\pause\par
+\begin{tabular}{lrrrrr}
+&\llap{Phy}s.~Sci&Maths&Comp.~Sci.&Engineer&All Subj\\
+Russell Group&34260 &18480& 13290& 40880& 407495\\
+	& 8.4\%&	4.5\%&	3.3\%&	10.0\%&\\
+Univ. Alliance&13350&7470&24850&26715&389100\\
+	& 3.4\%&	1.9\%&	6.4\%&	6.9\%&\\
+Million Plus& 2580&195&11480&8890& 171590\\
+	& 1.5\%&	0.1\%&	6.7\%&	5.2\%&\\
+Total&73325&36590&79480&115295&1597825\\
+	& 4.6\%&	2.3\%&	5.0\%&	7.2\%&\\
+\end{tabular}
+Note that many universities are in no group.\par\pause
+\begin{description}
+\item[BME]32\% as against all STEM 27\% (rest of STEM 26\%)
+\item[LPN]13\% as against all STEM 9\% (rest of STEM 8\%)
+\item[women]16\% as against all STEM 35\% (rest of STEM 40\%)
+\end{description}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Hence a specific response}
+\pause
+The Institute of Coding,\pause 
+\begin{itemize}[<+->]
+\item Announced George Osborne November 2015 \cite{HMG2015a}
+\item[*]Somehow morphs from UK-wide to England-only
+\item Competition launched by BEIS/HEFCE March 2017 \cite{BEIS2017a}
+\item Announced  by PM at Davos January 2018 \cite{HMG2018a}
+\item[*]HEFCW decides to join
+\end{itemize}
+\pause Currently 27 university partners\pause, and so many industrial that the letters of support overflowed HEFCE's mailbox.
+\par
+\pause
+Whole project divided into five themes.
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Theme 1: University learners}
+\begin{enumerate}[<+->]
+\item Co-designed industry standard 
+\item Degree programmes, e.g. Data Science, CyberSecurity
+\item Curriculum innovation 
+\item Training for work-readiness 
+\item Extra-curricular innovation 
+\item Innovative spaces 
+\item Use of analytics for enhancement 
+\item Learner records 
+%\item 
+\end{enumerate}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Theme 2: The digital workforce }
+\begin{enumerate}[<+->]
+\item Alternative delivery models 
+\item Specialist provision 
+\item Generalist provision 
+\item Education training 
+%\item 
+\end{enumerate}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Theme 3: Digitalising the professions }
+\begin{enumerate}[<+->]
+\item Modular digital masters programme 
+\item Short tasters
+\end{enumerate}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Theme 4: Widening participation}
+\begin{enumerate}[<+->]
+\item Creating a pipeline 
+\item Tailored, inclusive curricula 
+\item Flexible delivery models
+\item Understanding barriers 
+\item Sharing good practice 
+\end{enumerate}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Theme 5}
+\begin{enumerate}[<+->]
+\item Digital Skills Observatory 
+\item Conferences, events and media: First Conference 10-13 March 2019, Manchester
+\item Long-term sustainability 
+\item Educating the educators 
+\item Future Projects Fund (call closed December 2018)
+\end{enumerate}
+\end{frame}
+\begin{frame}[fragile,allowframebreaks]
+\bibliography{../CEP2019}
+\end{frame}
+\end{document}
+\begin{frame}[fragile]
+\frametitle{}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{}
+\end{frame}
+\pause
+\begin{itemize}[<+->]
+\end{itemize}
+\begin{description}
+\end{description}
+\end{frame}
+\begin{frame}
