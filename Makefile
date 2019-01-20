@@ -1,10 +1,10 @@
-targets = ACMCompEd2019.pdf
+targets = ITiCSE2019.pdf
 
 all: $(targets)
 
 pdflatex = pdflatex -interaction=errorstopmode -halt-on-error
 
-%.pdf:  %.tex ACMCompEd2019.bib
+%.pdf:  %.tex ITiCSE2019.bib
 	$(pdflatex) $<
 	bibtex $*
 	$(pdflatex) $<
