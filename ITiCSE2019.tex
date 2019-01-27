@@ -41,6 +41,7 @@
 % removes the headers from each page per the preparation instructions, as these are not needed and will be updated with the chairs' actual session names during the pagination/indexing process:
 \fancyhead{}
 
+\hypersetup{draft}
 \begin{document}
 \title{The Institute of Coding: A University-Industry Collaboration to Address the UK's Digital Skills Crisis}
 %\titlenote{}
@@ -293,12 +294,12 @@ skills profile of the country~\cite{davenport-et-al:cep2019}.
 
 The structure of the paper is as follows. In Section~\ref{problem} we
 attempt to define the wider problem through the lens of graduate
-employment and earnings; this is followed in Sections~\ref{ukhepolicy}
-and~\ref{sec:Skills} by the UK higher education policy context and the
-skills mismatch respectively; in Section~\ref{ioc} we present the
-Institute of Coding and its key themes and activities, finishing with
-future work and the potential replicability of aspects of
-the Institute in Section~\ref{concl}.
+employment and earnings; this is followed in Section~\ref{ukhepolicy}
+by the UK higher education policy context and the skills mismatch
+respectively; in Section~\ref{ioc} we present the Institute of Coding
+and its key themes and activities, finishing with future work and the
+potential replicability of aspects of the Institute in
+Section~\ref{concl}.
 
 % and now in Lithuania \cite{Xinhua2018a}) to prisons \cite{Maher2018a}.
 
@@ -414,6 +415,21 @@ correlation, but a fairly weak one ($R^2=0.286$). The best fit is
 $W=0.92672+0.53388*M$. For the reasons explained at the end of the
 previous section, the ideal ``gender-neural" fit would be
 $W=4+M$. Both these lines are shown in Figure~\ref{fig:BBC}.
+
+\subsection{Skills Mismatch}\label{sec:Skills}
+
+There is a widespread and longstanding complaint that ``students
+aren't industry-ready'', or ``there is a skills mismatch''. Some of
+this is due to a misapprehension on the part of employers -- and
+perhaps misunderstanding of the nature of education versus training
+(for example, exhibited by those outside the IT industry itself, but
+seeking to hire people with ``10 years experience of programming in
+Ruby''), but much of it is genuine. Previous work in this space has
+focused on the evidence based for how programming and software
+engineering is taught at degree
+level~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018}. One
+of the main challenges for the university community is to better
+understand this complaint.
 
 \begin{figure*}
 \includegraphics[width=\textwidth]{images/BBCSalaryDatav5.jpg}
@@ -562,105 +578,90 @@ second class that we need to investigate in the hope that non-sandwich
 courses can learn from them. A major one, brought out repeatedly by
 students returning from placement, is team working.
 
-\section{Skills mismatch}\label{sec:Skills}
+% \subsection{Team/Group working}
 
-There is a widespread and longstanding complaint that ``students
-aren't industry-ready'', or ``there is a skills mismatch''. Some of
-this is due to a misapprehension on the part of employers -- and
-perhaps misunderstanding of the nature of education versus training
-(for example, exhibited by those outside the IT industry itself, but
-seeking to hire people with ``10 years experience of programming in
-Ruby''), but much of it is genuine. Previous work in this space has
-focused on the evidence based for how programming and software
-engineering is taught at degree
-level~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018}. One
-of the main challenges for the university community is to better
-understand this complaint.
+% ``Teamwork'' is often identified as a key skill \cite[and many
+% others]{ArcherDavidson2008}. Simplistically, then, universities should
+% teach it. Indeed, the British Computer Society has long required this
+% of degrees it accredits:
+% \begin{quote} An ability to work as a member of a development team
+% recognising the different roles within a team and different ways of
+% organising teams \cite[Requirement 2.3.1]{BCS2018a}.
+% \end{quote}
+% The problem is that group working is unpopular with students. Most of
+% them have never experienced it in their academic work at school, and
+% really dislike ``being dragged down'', as they generally put it, by
+% others. In many countries, this wouldn't matter, but the UK has (many
+% would say ``suffers from'', see, e.g. \cite{Cupples2015a}) the
+% National Student Survey \cite{OfS2018a}. The results of this, notably
+% the headline ``are you satisfied with your course'' question, are
+% pored over intently by university management \cite[Myth
+% 3]{OfS2018a}. As well as the quantitative scores, the students submit
+% free-text responses, and it does not take many students complaining
+% about the group work before the Pro-Vice-Chancellor (Teaching) or
+% equivalent\footnote{Whose pay may well be linked to these scores.} is
+% beating down the Director of Studies door, saying ``obviously you must
+% abolish group work immediately''. The first three authors
+% have been Directors of Studies, and can vouch for this.
 
-\subsection{Team/Group working}
+% However, a BCS-accredited course gives the response ``but our
+% accreditation demands it'', whereupon the discussion can evolve into a
+% more sensible debate about the size, shape and process of group
+% working.
+% \par This leads to a curious paradox. Employers value group working
+% experience (at a Shadbolt Review focus group, every employer stated
+% they always asked potential employees about experience of group
+% working), group working experience is only taught because
+% accreditation requires it, but employers do not value accreditation.
+% ``systems of accreditation more broadly are poorly understood and
+% valued by employers, students and HE providers''
+% \cite[\P2.12]{Shadbolt2016a}.
 
-``Teamwork'' is often identified as a key skill \cite[and many
-others]{ArcherDavidson2008}. Simplistically, then, universities should
-teach it. Indeed, the British Computer Society has long required this
-of degrees it accredits:
-\begin{quote} An ability to work as a member of a development team
-recognising the different roles within a team and different ways of
-organising teams \cite[Requirement 2.3.1]{BCS2018a}.
-\end{quote}
-The problem is that group working is unpopular with students. Most of
-them have never experienced it in their academic work at school, and
-really dislike ``being dragged down'', as they generally put it, by
-others. In many countries, this wouldn't matter, but the UK has (many
-would say ``suffers from'', see, e.g. \cite{Cupples2015a}) the
-National Student Survey \cite{OfS2018a}. The results of this, notably
-the headline ``are you satisfied with your course'' question, are
-pored over intently by university management \cite[Myth
-3]{OfS2018a}. As well as the quantitative scores, the students submit
-free-text responses, and it does not take many students complaining
-about the group work before the Pro-Vice-Chancellor (Teaching) or
-equivalent\footnote{Whose pay may well be linked to these scores.} is
-beating down the Director of Studies door, saying ``obviously you must
-abolish group work immediately''. The first three authors
-have been Directors of Studies, and can vouch for this.
+% \subsection{Code Review}\label{sec:Code}
 
-However, a BCS-accredited course gives the response ``but our
-accreditation demands it'', whereupon the discussion can evolve into a
-more sensible debate about the size, shape and process of group
-working.
-\par This leads to a curious paradox. Employers value group working
-experience (at a Shadbolt Review focus group, every employer stated
-they always asked potential employees about experience of group
-working), group working experience is only taught because
-accreditation requires it, but employers do not value accreditation.
-``systems of accreditation more broadly are poorly understood and
-valued by employers, students and HE providers''
-\cite[\P2.12]{Shadbolt2016a}.
+% A further aspect of the ``not industry ready'' complaint has recently
+% been identified by the Institute of Coding team as part of the
+% engagement with industry, and is described by a prominent
+% industrialist from the safety-critical sector as follows.
+% \begin{quote} We do find we have to train grads how to review stuff
+% properly --- both personal (their own stuff) and team/peer
+% reviews. While they may have been exposed to the concept of personal
+% and peer reviews, none of them have actually been taught how to do it
+% properly and how to measure its effectiveness. \cite{Chapman2018c}
+% \end{quote} This quote is supported by many Institute of Coding
+% industrialists, and also by the work of \cite{Boerstleretal2018a},
+% though their conclusion ``Code quality should be discussed more
+% thoroughly in educational programs'' is probably too weak. As
+% \cite{Chapman2018c} says ``While they may have been exposed to the
+% concept of personal and peer reviews'' it is unlikely that many of
+% them will actually have practiced it.  One might ask ``but what about
+% the group working''?
+% \par That is a good question, and one that the Institute of Coding is
+% investigating. A provisional answer lies in the nature of group
+% working. Practically all BCS-accredited universities meet the
+% requirement \cite[Requirement 2.3.1]{BCS2018a} (and ``working with
+% others'' \cite[Requirement 2.3.2]{BCS2018a}) by means of a group
+% practical project. This is practically always done before the final
+% year, both for reasons of balance (BCS also requires an individual
+% project amounting to at least 25\% of the final year \cite[Requirement
+% 2.5.1]{BCS2018a}) and, more pragmatically, so that the memory of this
+% disliked experience will have worn off before the students complete
+% the National Student Survey in their final year. Universities with a
+% strong sandwich programme also want students to be at least engaged on
+% a group project when they go to their interviews.
 
-\subsection{Code Review}\label{sec:Code}
-
-A further aspect of the ``not industry ready'' complaint has recently
-been identified by the Institute of Coding team as part of the
-engagement with industry, and is described by a prominent
-industrialist from the safety-critical sector as follows.
-\begin{quote} We do find we have to train grads how to review stuff
-properly --- both personal (their own stuff) and team/peer
-reviews. While they may have been exposed to the concept of personal
-and peer reviews, none of them have actually been taught how to do it
-properly and how to measure its effectiveness. \cite{Chapman2018c}
-\end{quote} This quote is supported by many Institute of Coding
-industrialists, and also by the work of \cite{Boerstleretal2018a},
-though their conclusion ``Code quality should be discussed more
-thoroughly in educational programs'' is probably too weak. As
-\cite{Chapman2018c} says ``While they may have been exposed to the
-concept of personal and peer reviews'' it is unlikely that many of
-them will actually have practiced it.  One might ask ``but what about
-the group working''?
-\par That is a good question, and one that the Institute of Coding is
-investigating. A provisional answer lies in the nature of group
-working. Practically all BCS-accredited universities meet the
-requirement \cite[Requirement 2.3.1]{BCS2018a} (and ``working with
-others'' \cite[Requirement 2.3.2]{BCS2018a}) by means of a group
-practical project. This is practically always done before the final
-year, both for reasons of balance (BCS also requires an individual
-project amounting to at least 25\% of the final year \cite[Requirement
-2.5.1]{BCS2018a}) and, more pragmatically, so that the memory of this
-disliked experience will have worn off before the students complete
-the National Student Survey in their final year. Universities with a
-strong sandwich programme also want students to be at least engaged on
-a group project when they go to their interviews.
-
-But students hate being ``dragged down'' by their fellow team-members
-(it is odd that Directors of Studies and group project lecturers hear
-far less about being ``dragged up''!).  Hence students are very keen
-to have ``their own bit'' of the group activity, and it is difficult
-to have true team responsibility and code reviews.  Various attempts
-are being made at this, e.g. at Bath the use of ``Agile'' methodology
-with testing formally built into the set of sprints, but it is
-probably fair to say that this is an under-researched area.
-\cite{Hundhausenetal2013a} is one of the few pieces of research, but
-they say ``In future research, we would like to systematically
-investigate best practices for building effective
-P[edagogical]C[ode]R[eview] teams''.
+% But students hate being ``dragged down'' by their fellow team-members
+% (it is odd that Directors of Studies and group project lecturers hear
+% far less about being ``dragged up''!).  Hence students are very keen
+% to have ``their own bit'' of the group activity, and it is difficult
+% to have true team responsibility and code reviews.  Various attempts
+% are being made at this, e.g. at Bath the use of ``Agile'' methodology
+% with testing formally built into the set of sprints, but it is
+% probably fair to say that this is an under-researched area.
+% \cite{Hundhausenetal2013a} is one of the few pieces of research, but
+% they say ``In future research, we would like to systematically
+% investigate best practices for building effective
+% P[edagogical]C[ode]R[eview] teams''.
 
 % this is the main section? do we have text to rip from the IoC bid
 % doc?
@@ -694,15 +695,18 @@ global digital economy''. It is structured around five themes:
 
 \subsection{``University Learners''}
 
-This is aimed at understanding, and solving, the ``Skills Mismatch''
-problems (see \S\ref{sec:Skills}). As seen from \S\ref{sec:Code},
-these problems can be quite subtle, and are not addressed by such broad
-requirements as \cite[Requirement 2.3.1]{BCS2018a}.  Hence the
-Institute is also looking at accreditation, with a view to producing
-more detailed records, essentially e-portfolios, of skills
-achieved. It is possible that these will be supported by a
-blockchain-based mechanism, as is being done elsewhere
-\cite{RMIT2018a}.
+% This is aimed at understanding, and solving, the ``Skills Mismatch''
+% problems (see \S\ref{sec:Skills}). As seen from \S\ref{sec:Code},
+% these problems can be quite subtle, and are not addressed by such broad
+% requirements as \cite[Requirement 2.3.1]{BCS2018a}.  
+This is aimed at understanding, and solving, the various ``Skills
+Mismatch'' problems; as discussed previously, these problems can be
+quite subtle, and are not addressed by such broad requirements as
+\cite[Requirement 2.3.1]{BCS2018a}.  Hence the Institute is also
+looking at accreditation, with a view to producing more detailed
+records, essentially e-portfolios, of skills achieved. It is possible
+that these will be supported by a blockchain-based mechanism, as is
+being done elsewhere \cite{RMIT2018a}.
 
 \subsection{``The Digital Workforce''}
 
@@ -729,7 +733,7 @@ digital skills. As for theme 2, this will be sharing content with theme 1.
 This is aimed at addressing the with systemic issues with gender and
 diversity, as identified at the start of this paper. Since the
 Institute bid was submitted, the salary data in \cite{DfE2018d} (see
-Figure \ref{fig:BBC}) have been released, which show the importance of
+Figure~\ref{fig:BBC}) have been released, which show the importance of
 a more nuanced study of the effect of gender in particular. The
 analysis in \cite{DfE2018d} concentrated on gender, but we are hoping
 to do similar studies for computer science with regard to other
