@@ -1,2 +1,2 @@
-# ACMCompEd2019
-Paper for the ACM Global Computing Education Conference 2019 (and others)
+# EDUCON2020
+Paper for the IEEE Global Engineering Education Conference (IEEE EDUCON 2020)
