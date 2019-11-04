@@ -1,95 +1,76 @@
-%%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
-\newif\ifanon\anontrue
-\documentclass[sigconf,anonymous]{acmart}
-\usepackage{paralist}
-\usepackage{url}
-\usepackage[hyphenbreaks]{breakurl}
-
-\def\UrlBreaks{\do\/\do-}
-
-%%%% As of March 2017, [siggraph] is no longer used. Please use sigconf (above) for SIGGRAPH conferences.
-
-%%%% Proceedings format for SIGPLAN conferences 
-% \documentclass[sigplan, anonymous, review]{acmart}
-
-%%%% Proceedings format for SIGCHI conferences
-% \documentclass[sigchi, review]{acmart}
-
-\usepackage{booktabs} % For formal tables
+\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first
+% footnote. If that is unneeded, please comment it out.
+\usepackage[british]{babel}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[pdftex,colorlinks=true]{hyperref}
 
 
-% Copyright
-%\setcopyright{none}
-%\setcopyright{acmcopyright}
-\setcopyright{acmlicensed}
-%\setcopyright{rightsretained}
-%\setcopyright{usgov}
-%\setcopyright{usgovmixed}
-%\setcopyright{cagov}
-%\setcopyright{cagovmixed}
-
-\copyrightyear{2019}
-\acmYear{2019}
-\setcopyright{acmlicensed}
-\acmConference[ITiCSE 2019]{24th Annual Conference on Innovation and Technology in Computer Science Education}{Jul. 15--17, 2019}{Aberdeen, UK}
-%\acmBooktitle{}
-%\acmPrice{15.00}
-%\acmDOI{10.1145/3159450.3159547}
-%\acmISBN{978-1-4503-5103-4/18/02}
-% This slight change to the code may also save 1 or 2 lines of space.
-
-% removes the headers from each page per the preparation instructions, as these are not needed and will be updated with the chairs' actual session names during the pagination/indexing process:
-\fancyhead{}
-
-%\hypersetup{draft}
 \begin{document}
+
 \title{The Institute of Coding: A University-Industry Collaboration to Address the UK's Digital Skills Crisis}
-%\titlenote{}
-%\subtitle{Extended Abstract}
-%\subtitlenote{}
-\author{James H. Davenport}
-\orcid{0000-0002-3982-7545}
-\affiliation{%
-  \institution{University of Bath}
-  \streetaddress{}
-  \city{Bath} 
-  \country{United Kingdom}
-}
-\email{j.h.davenport@bath.ac.uk}
 
-\author{Tom Crick}
-\orcid{0000-0001-5196-9389}
-\affiliation{%
-  \institution{Swansea University}
-  \streetaddress{}
-  \city{Swansea} 
-  \country{United Kingdom}
-}
-\email{thomas.crick@swansea.ac.uk}
+\author{\IEEEauthorblockN{James H. Davenport\IEEEauthorrefmark{1}, Tom
+    Crick\IEEEauthorrefmark{2}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Department of Computer Science, 
+University of Bath, Bath, UK\\
+Email: j.h.davenport@bath.ac.uk}
+\IEEEauthorblockA{\IEEEauthorrefmark{2}School of Education, 
+Swansea University, Swansea, UK\\
+Email: thomas.crick@swansea.ac.uk}}
 
-\author{Alan Hayes}
-%\orcid{}
-\affiliation{%
-  \institution{University of Bath}
-  \streetaddress{}
-  \city{Bath} 
-  \country{United Kingdom}
-}
-\email{a.hayes@bath.ac.uk}
+% %\hypersetup{draft}
+% \begin{document}
+% \title{The Institute of Coding: A University-Industry Collaboration to Address the UK's Digital Skills Crisis}
+% %\titlenote{}
+% %\subtitle{Extended Abstract}
+% %\subtitlenote{}
+% \author{James H. Davenport}
+% \orcid{0000-0002-3982-7545}
+% \affiliation{%
+%   \institution{University of Bath}
+%   \streetaddress{}
+%   \city{Bath} 
+%   \country{United Kingdom}
+% }
+% \email{j.h.davenport@bath.ac.uk}
 
-\author{Rachid Hourizi}
-%\orcid{}
-\affiliation{%
-  \institution{University of Bath}
-  \streetaddress{}
-  \city{Bath} 
-  \country{United Kingdom}
-}
-\email{r.hourizi@bath.ac.uk}
+% \author{Tom Crick}
+% \orcid{0000-0001-5196-9389}
+% \affiliation{%
+%   \institution{Swansea University}
+%   \streetaddress{}
+%   \city{Swansea} 
+%   \country{United Kingdom}
+% }
+% \email{thomas.crick@swansea.ac.uk}
+
+% \author{Alan Hayes}
+% %\orcid{}
+% \affiliation{%
+%   \institution{University of Bath}
+%   \streetaddress{}
+%   \city{Bath} 
+%   \country{United Kingdom}
+% }
+% \email{a.hayes@bath.ac.uk}
+
+% \author{Rachid Hourizi}
+% %\orcid{}
+% \affiliation{%
+%   \institution{University of Bath}
+%   \streetaddress{}
+%   \city{Bath} 
+%   \country{United Kingdom}
+% }
+% \email{r.hourizi@bath.ac.uk}
  
-% If the default list of authors is too long for headers}
-\renewcommand{\shortauthors}{Davenport et al.}
-
+\maketitle
 
 \begin{abstract}
 The Institute of Coding is a new \pounds40m+ initiative by the UK
@@ -124,63 +105,9 @@ skills crisis''.
 %its hybrid structure, key themes and planned deliverables, identifying some of the key opportunities and challenges, as well as its potential replicability of aspects of the Institute in other jurisdictions.
 \end{abstract}
 
-\begin{CCSXML}
-<ccs2012>
-<concept>
-<concept_id>10003456.10003457.10003527.10003531.10003533</concept_id>
-<concept_desc>Social and professional topics~Computer science education</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10003457.10003527.10003531.10003535</concept_id>
-<concept_desc>Social and professional topics~Information technology education</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10003457.10003527.10003531.10003751</concept_id>
-<concept_desc>Social and professional topics~Software engineering education</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10003457.10003580.10003568</concept_id>
-<concept_desc>Social and professional topics~Employment issues</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10003457.10003458</concept_id>
-<concept_desc>Social and professional topics~Computing industry</concept_desc>
-<concept_significance>300</concept_significance>
-</concept>
-</ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Social and professional topics~Computer science education}
-\ccsdesc[500]{Social and professional topics~Information technology education}
-\ccsdesc[500]{Social and professional topics~Software engineering education}
-\ccsdesc[500]{Social and professional topics~Employment issues}
-\ccsdesc[300]{Social and professional topics~Computing industry}
-
-\keywords{Digital skills, Programming, Computer science education,
-  Undergraduate education, Graduate education, Industry collaboration,
-  UK}
-
-\maketitle
-
-% From CfP:
-% Short papers (up to 5 pages) focus on dissemination and discussion
-% of new ideas in computing education practice or research that merit
-% wider awareness and discussion within the community. They can present
-% preliminary results of new educational innovations, present and
-% discuss novel educational technologies, report work-in-progress
-% research (including promising systems or tools that have not yet been
-% evaluated and/or adopted extensively), or raise issues of significance
-% for the development of the discipline, such as long-term strategic
-% needs for computing education and curricula. All short papers are
-% expected to have an appropriate coverage of literature to support the
-% ideas and arguments that they present. Because it lacks some elements
-% of a research paper, a short paper is evaluated mainly by its
-% anticipated impact on discussions during the conference and possible
-% future contribution to the field of computing education.
+\begin{IEEEkeywords}
+Keywords
+\end{IEEEkeywords}
 
 \section{Introduction}
 
@@ -936,11 +863,10 @@ perception -- and economic, societal and cultural importance -- of
 This work was supported by the Institute of Coding which received
 \pounds20m of funding from the Office for Students (OfS), as well as
 support from the Higher Education Funding Council for Wales (HEFCW).
-\ifanon
-%The first author is grateful to Matt Dickson (University of Bath) for discussions about \cite{DfE2018d}, but any mistakes are the authors' alone.
-\fi
 
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{ITiCSE2019} 
+%The first author is grateful to Matt Dickson (University of Bath) for discussions about \cite{DfE2018d}, but any mistakes are the authors' alone.
+
+\bibliographystyle{IEEEtran}      % basic style, author-year citations
+\bibliography{EDUCON2020} 
 
 \end{document}
