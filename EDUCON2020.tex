@@ -4,13 +4,14 @@
 % footnote. If that is unneeded, please comment it out.
 \usepackage[british]{babel}
 \usepackage[noadjust]{cite}
+\usepackage{url}
 \usepackage[hyphenbreaks]{breakurl}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage[pdftex,colorlinks=true]{hyperref}
-
+\def\UrlBreaks{\do\/\do-}
 
 \begin{document}
 
@@ -914,20 +915,21 @@ the foundation for continued work in this area.
 
 \section*{Acknowledgements}
 
-This work was supported by the Institute of Coding which received
+This work was supported by the Institute of Coding (IoC), which received
 \pounds20m of funding from the Office for Students (OfS), as well as
 support from the Higher Education Funding Council for Wales (HEFCW).
 
-We are gratefu to the IoC Observatory staff, especially Dr Fiona MacGill, for the data collection.
-The second author is grateful to Matt Dickson (University of Bath) for
-discussions about \cite{DfE2018d}, but any mistakes are the authors'
-alone.
+We are grateful to the IoC Observatory staff, especially Dr Fiona
+MacGill (University of Bath), for the data collection. The first
+author is also grateful to Dr Matt Dickson (University of Bath) for
+discussions about undergraduate degrees and labour market returns in
+the UK~\cite{DfE2018d}, but any mistakes are the authors' alone.
 
 % trigger a \newpage just before the given reference
 % number - used to balance the columns on the last page
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
-\IEEEtriggeratref{49}
+\IEEEtriggeratref{48}
 % The "triggered" command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
 
