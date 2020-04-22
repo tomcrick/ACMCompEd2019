@@ -1,4 +1,4 @@
-targets = EDUCON2020.pdf
+targets = EDUCON2020v2.pdf
 
 all: $(targets)
 
