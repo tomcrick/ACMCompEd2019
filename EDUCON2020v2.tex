@@ -57,7 +57,7 @@ science curriculum reform across the four nations of the UK.
 % computer science fundamentals and develop transferable computational
 % thinking skills.
 
-In this paper, we iutline the background, evidence base and rationale
+In this paper, we outline the background, evidence base and rationale
 for the IoC (especially within the complex UK policy
 context); its key themes, current activities and outputs; as well as
 anticipate its likely impact over the coming years. Furthermore, we
@@ -67,8 +67,8 @@ similar ambitions to address the ``digital skills crisis''.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Digital skills, Programming, Computer science education, Undergraduate
-education, Graduate education, Industry collaboration
+Digital skills, Software engineering, Programming, Undergraduate
+education, Graduate education, Computer science education, Industry collaboration
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -79,18 +79,19 @@ education, Graduate education, Industry collaboration
 % transferability elsewhere?
 %Set the scene -- UK digital skills, CS ed reform, digital economy, etc
 
-We are frequently being told that this is ``the digital age'', and
-that we ``live in a knowledge economy''\footnote{Despite the debunking
-by Friesen~\cite{Friesen2008}.}, with ``software eating the
+We are frequently informed that this is ``the digital age'', and that
+we ``live in a knowledge economy''\footnote{Despite the debunking by
+Friesen~\cite{Friesen2008}.}, with ``software eating the
 world''~\cite{andreessen:2011}; nevertheless, the impact of digital on
-all of our lives is clear. From entertainment and communication, via
+all of our lives is clear. From entertainment and interactions, via
 the power and reach of an oligopoly of social media platforms, with
-``algorithms'' influencing what news we consume, or making decisions
-that affect us every day; to education, health and social care,
-through to innovation in public services~\cite{ecdsmsuk:2018}. We are
-also seeing the emergence of artificial intelligence and machine
-learning as general-purpose technologies that could transform whole
-industries and even re-invent the process of invention
+opaque algorithms influencing what news we consume, or making
+decisions that affect us every day; to education, health and social
+care, through to fostering innovation in essential public
+services~\cite{ecdsmsuk:2018}. We are also seeing the emergence of
+``big data'', machine learning and artificial intelligence as
+general-purpose technologies that could transform whole industries and
+may even re-invent the process of invention
 itself~\cite{brynjolfsson-et-al:2018,dwivedi-et-al:ijim2019}. What
 does this mean for education systems, national curricula and skills
 training -- from compulsory, through to post-compulsory, into lifelong
@@ -143,7 +144,30 @@ of tech and telco professionals in the UK''~\cite{DfE2018a}.
 
 \subsection{Education and Skills Policy}
 
-There are initiatives around the world to address the digital skills shortages or today~\cite{cece:2017}. While this is often pushed on economic grounds, there are social needs: every country needs a digitally-capable citizenry. The basic case is made in \cite{davenport-et-al:cep2019}. The ongoing Covid-19 pandemic and the social isolation it is engendering are dragging many bodies, from the ``Mother of Parliaments'' to Alcoholics Anonymous meetings, into the digital age. This has made the heterogenous level of digital skills and digital provision in society very obvious.
+There are a wide range of initiatives around the world to address the
+digital skills shortages or today~\cite{cece:2017}. While this is
+often pushed on economic grounds, there are social needs: every
+country needs a digitally-confident and capable citizenry. The basic
+case is made in \cite{davenport-et-al:cep2019}; at least three recent
+UK Parliamentary Select Committee
+inquiries~\cite{ukholds:2015,ukhocst:2016,ukholc:2017} have, wholly or
+in part, focused on the `digital skills crisis'. This is alongside
+substantial curriculum reform across the
+UK~\cite{crick+sentance:2011,brown-et-al:sigcse2013,brown-et-al:toce2014},
+including a new national curriculum in England~\cite{DfE2013a} and
+emerging reform in
+Wales~\cite{wgictreview:2013,crick+beauchamp:bera2017,moller+crick:jce2018}.
+We have also seen significant changes to the available technical
+qualifications in this domain, based on perceived rigour, content,
+distinctiveness and modes of assessment; again, this work is described
+in more detail in \cite{davenport-et-al:cep2019}.
+
+Furthermore, the ongoing COVID-19/novel coronavirus global pandemic
+and the social isolation it is engendering are dragging many bodies,
+from the ``Mother of Parliaments'' (UK Parliament) to Alcoholics
+Anonymous meetings, into the digital age. This has made the
+heterogenous level of digital skills and digital provision in society
+very obvious.
 
 %Globally, there are a plethora of high-profile initiatives and
 %interventions to address the wider societal challenge, and the
@@ -191,8 +215,6 @@ There are initiatives around the world to address the digital skills shortages o
 %with related activity in Wales) to transform the digital skills
 %profile of the country~\cite{davenport-et-al:cep2019}.
 
-There have been substantial changes to the school curricula in the various nations of the UK, described in \cite{brown-et-al:toce2014}, and whose impact is described in more detail in \cite{davenport-et-al:cep2019}.
-
 The structure of the paper is as follows. In Section~\ref{problem} we
 attempt to define the wider problem through the lens of graduate
 employment and earnings; this is followed in Section~\ref{ukhepolicy}
@@ -210,10 +232,11 @@ While in many instances throughout this paper we will refer to the
 United Kingdom (UK) -- consisting of the four nations of England,
 Scotland, Wales and Northern Ireland -- many of the initiatives,
 approaches and funding models are specifically focused on England (or
-England and Wales in the case of the Institute fo Coding itself), as a number of policy areas, including education
-and skills, are devolved to the respective national governments. We will
-attempt to be as clear as possible when referring to specific
-interventions across or between the four nations.
+England and Wales in the case of the Institute fo Coding itself), as a
+number of policy areas, including education and skills, are devolved
+to the respective national governments. We will attempt to be as clear
+as possible when referring to specific interventions across or between
+the four nations.
 
 \section{So What's the Problem?}\label{problem}
 
@@ -229,19 +252,30 @@ degree in computer science.}}''
 
 This is beneficial to the individual: according to a 2011 UK
 Government report on economic returns from higher education
-qualifications~\cite[Figure 4]{BIS2011a}, ``mathematical and
-computer sciences'' have the second highest earnings return of all
-subjects (overtaken only by ``medicine and dentistry'').  The country
-profits from this as well: per head, it is the fourth most beneficial
-subject to the UK~\cite[p.~16]{BIS2011a} (and backed up by the detailed analysis in \cite[Figure 15]{DfE2018d}, \emph{provided} one adjusts for prior attainment and background). Nevertheless, despite the
+qualifications~\cite[Figure 4]{BIS2011a}, ``mathematical and computer
+sciences'' have the second highest earnings return of all subjects
+(overtaken only by ``medicine and dentistry'').  The country profits
+from this as well: per head, it is the fourth most beneficial subject
+to the UK~\cite[p.~16]{BIS2011a} (and backed up by the detailed
+analysis in \cite[Figure 15]{DfE2018d}, \emph{provided} one adjusts
+for prior attainment and background). Nevertheless, despite the
 headline success in a variety of UK Government reports, the employment
 figures are not good, and the earnings data are patchy.
 
 \subsection{Graduate Employment}
 
 Further to the 2015 UK education and skills report~\cite{UKCES2015b},
-the discrepancy between skills shortage and apparently relevant graduate unemployment was highlighted in the 2016 UK Government's ``Shadbolt''
-review~\cite{Shadbolt2016a}. This, and the discrepancies in graduate outcomes, is addressed in \cite[\S IIA]{davenport-et-al:cep2019}. The brief summary is that, after allowing for socio-economic factors, which the headline new graduate unemployment figures (11.7\% versus a STEM average of 8.4\%) that prompted the review did not, computing doesn't have a worse employment position than other subjects, but doesn't have the superior employment record that one might expect.
+the discrepancy between skills shortage and apparently relevant
+graduate unemployment was highlighted in the 2016 UK Government's
+``Shadbolt'' review~\cite{Shadbolt2016a}. This, and the discrepancies
+in graduate outcomes, is addressed in \cite[\S
+IIA]{davenport-et-al:cep2019}. The brief summary is that, after
+allowing for socio-economic factors, which the headline new graduate
+unemployment figures (11.7\% versus a `` Science, Technology,
+Engineering and Mathematic'' (STEM) average of 8.4\%) that
+prompted the review, computing did not have a worse employment
+position than other subjects, but also does not have the superior employment
+record that one might expect.
 
 %\begin{quote} ``{\emph{In this context, apparently high rates of
 %unemployment\footnote{11.7\% six months after graduation (the then standard
@@ -274,7 +308,14 @@ review~\cite{Shadbolt2016a}. This, and the discrepancies in graduate outcomes, i
 
 \subsection{Graduate Earnings}
 
-The UK's  graduate longitudinal education outcomes (LEO) dataset~\cite{DfE2017a} tracks individuals from school via university to jobs (or at least taxpayers), and can therefore answer questions like ``allowing for prior school attainment and other background features, how much does studying subject X at university Y affect earnings.  Of course, earnings are not the same as quality of life, or contrbution to society, but they are measurable. There is detailed analysis in \cite[\S IIB, IIC]{davenport-et-al:cep2019}
+The UK's graduate longitudinal education outcomes (LEO)
+dataset~\cite{DfE2017a} tracks individuals from school via university
+to jobs (or at least taxpayers), and can therefore answer questions
+such as ``allowing for prior school attainment and other background
+features, how much does studying {\emph{subject X}} at {\emph{university Y}} affect
+earnings?''.  Of course, earnings are not the same as quality of life, or
+contribution to society, but they are measurable (see detailed
+analysis~\cite[\S IIB, IIC]{davenport-et-al:cep2019}).
 
 %If we look beyond purely getting jobs to the earnings\footnote{Clearly
 %not the only measure of job quality, or contribution to society, but
@@ -316,34 +357,37 @@ The UK's  graduate longitudinal education outcomes (LEO) dataset~\cite{DfE2017a}
 %\subsection{Per-University Earnings}
 
 The 2018 BBC article~\cite{BBC2018f} allows us to break down the data
-underpinning the official government figures~\cite{DfE2018d},
+underpinning the official UK Government figures~\cite{DfE2018d},
 resulting in challenging figures for Computing. Salary premiums,
-allowing for the factors described in\cite[\S IIB]{davenport-et-al:cep2019}, are reported separately for
-men and women, and only if there were at least 50 students of that
-gender in the five cohorts (graduation cohort 2007--8 to graduation
-cohort 2011-12) considered. This means that, of the 82 English
-universities reporting Computing, 80 report male data and 30 report
-female data --- 28 report both. Looking at the 28 (see Figure
-\ref{fig:BBC}), one's first impression is that the male and female
-data are uncorrelated: for example the two universities with male
-premiums just above +\pounds2500 have female premiums of +\pounds9325
-and -\pounds5793. There is in fact a definite ($p=0.0034$) positive
+allowing for the factors described in\cite[\S
+IIB]{davenport-et-al:cep2019}, are reported separately for men and
+women, and only if there were at least 50 students of that gender in
+the five cohorts (graduation cohort 2007--8 to graduation cohort
+2011--12) considered. This means that, of the 82 English universities
+reporting Computing, 80 report male data and 30 report female data --
+28 report both. Looking at the 28 (see Figure \ref{fig:BBC}), one's
+first impression is that the male and female data are uncorrelated:
+for example the two universities with male premiums just above
++\pounds2500 have female premiums of +\pounds9325 and
+-\pounds5793. There is in fact a definite ($p=0.0034$) positive
 correlation, but a fairly weak one ($R^2=0.286$). The best fit is
-$W=0.92672+0.53388*M$. Since average
-graduate earnings are \pounds30,000/year for men and
-\pounds26,000/year for women \cite[p. 37]{DfE2018d}
-the ideal ``gender-neural'' fit would be
+$W=0.92672+0.53388*M$. Since average graduate earnings are
+\pounds30,000/year for men and \pounds26,000/year for women
+\cite[p. 37]{DfE2018d} the ideal ``gender-neural'' fit would be
 $W=4+M$. Both these lines are presented in Figure~\ref{fig:BBC}.
 
 \subsection{Skills Mismatch}\label{sec:Skills}
 
 There is a widespread and longstanding complaint in the UK that
-``students aren't industry-ready'', or ``there is a skills
-mismatch''. Some of this is due to a misapprehension on the part of
-employers -- and perhaps misunderstanding of the nature of education
-versus training (for example, exhibited by those outside the ICT
-industry itself, but seeking to hire people with ``10 years experience
-of programming in Ruby''), but much of it is genuine. Previous work in
+students are not ``industry-ready'', or there is a ``skills
+mismatch'', or that they do not demonstrate a long list ``work-ready
+skills'', including grit and
+resilience~\cite{prickett-et-al:iticse2020}. Some of this is due to a
+misapprehension on the part of employers -- and perhaps
+misunderstanding of the nature of (technical) education versus
+training (for example, exhibited by those outside the ICT industry
+itself, but seeking to hire people with ``10 years experience of
+programming in Ruby''), but much of it is genuine. Previous work in
 this space has focused on the evidence base for how programming and
 software engineering is taught at degree
 level~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018}. One
@@ -373,8 +417,8 @@ class groups~\cite{CallenderMason2017a}.
 \subsection{Teaching Excellence Framework}
 
 UK universities have been judged, very publicly, on their research for
-the last thirty years by a large-scale national Research Assessment
-Exercise (RAE), and its successor the Research Evaluation Framework
+the last thirty years by a large-scale national research assessment
+exercise, now called the Research Evaluation Framework
 (REF). This has led to many complaints, largely justified, that
 teaching, because it is not measured, is not taken as seriously as
 research, certainly in some of the leading research-intensive
@@ -439,12 +483,12 @@ last three to five years, but typically four\footnote{One such is
 detailed at
 \url{http://www.aston.ac.uk/study/degree-apprenticeships/employers/degree-apprenticeship-programmes/digital-and-technology-solutions-degree-apprenticeship/}}. The
 details of Level 7 apprenticeships have only just been approved at the
-time of writing~\cite{IfA2018a}, so it is hard to determine how they will work in
-practice. However, the entire Degree Apprenticeship mechanism does
-seem to be geared more to large companies capable of supporting a
-bespoke programme, as for example is happening in Accountancy, where
-the ``Big Four'' firms are enthusiastically supporting such
-programmes\footnote{For example:
+time of writing~\cite{IfA2018a}, so it is hard to determine how they
+will work in practice. However, the entire Degree Apprenticeship
+mechanism does seem to be geared more to large companies capable of
+supporting a bespoke programme, as for example is happening in
+Accountancy, where the ``Big Four'' firms are enthusiastically
+supporting such programmes\footnote{For example:
 \url{https://www.pwc.co.uk/careers/school-jobs/jobs/flying-start-degrees.html}}. How
 well it can adjust to smaller high-technology companies has yet to be
 seen.
@@ -474,18 +518,14 @@ degree.}}''~\cite{Shadbolt2016a}
 \end{quote}
 
 A simplistic remedy would be to require that all students study
-sandwich degrees, but this has numerous challenges:
-
-\begin{enumerate}
-\item Some students do not wish to, often for valid reasons;
-\item The supply of employers willing to offer such placements is
-limited, and often they are only offered to a limited number of
-universities with whom the employer has built up relations, often
-going back decades;
-\item The university needs to invest in the process: a successful
-sandwich year programme is not a matter of simply allowing students to
-intermit their studies.
-\end{enumerate}
+sandwich degrees, but this has numerous challenges: the supply of
+employers willing to offer such placements is limited, and often they
+are only offered to a limited number of universities with whom the
+employer has built up relations, often going back decades; the
+university needs to invest in the process: a successful sandwich year
+programme is not a matter of simply allowing students to intermit
+their studies; and finally, some students do not wish to, often for
+valid personal or financial reasons.
 
 Hence we should ask ourselves \emph{why} such courses are so
 successful (if indeed they are: there is a possible confounding
@@ -740,15 +780,20 @@ many years elsewhere~\cite{simon-et-al:sigcse2018}. This has also
 prompted a renewed look at how professional body accreditation can
 help foster and disseminate good practice~\cite{crick-et-al:cep2020}.
 
-Hence the Institute of Coding has organised sessions at the 2019 and 2020 instantiations of the new (first instantiation 2017) UK-specific conference on Computing Education \cite{CEP2019,CEP2020}. The papers here, and other Institute of Coding publications, are indexed in the repository: \url{ https://instituteofcoding.org/the-repository/}.
+Hence the Institute of Coding has organised sessions at the 2019 and
+2020 instantiations of the new (first instantiation 2017) UK-specific
+ACM Conference on Computing Education
+Practice~\cite{CEP2019,CEP2020}\footnote{The papers here, and other
+Institute of Coding publications, are indexed in the IoC repository:
+\url{https://instituteofcoding.org/the-repository/}.}
 
 \subsection{Key Challenges}
 
 Delivering as much education as the Institute proposes presumes a
 supply of educators; this is a major challenge at all levels for
 computing in the UK~\cite{brown-et-al:toce2014}, as it is in many
-countries. We have seen a number of challenges in the recruitment and
-retention of pre-university teachers (especially in
+other jurisdictions. We have seen a number of challenges in the recruitment and
+retention of pre-university practitioners (especially in
 England~\cite{sentance+waite:2018}), as well as issues with
 effectively scaling professional development opportunities at the
 national level~\cite{sentance+csizmadia:2017} (for example, subject
@@ -861,9 +906,9 @@ with a number of challenges~\cite{roehampton:2018}.
 We have seen -- and will continue to see -- a number of initiatives,
 activities and interventions which may prove useful to other nations
 reforming their curricula (both compulsory school-level, as well as
-post-compulsory), as well as in the wider aim of developing broader --
-sustainable and transferable -- societal digital, data, computational
-and engineering skills. There is a long history in the UK and
+post-compulsory); furthermore, this fits with the wider aspiration of
+developing broader and transferable societal digital, data and
+computational skills. There is a long history in the UK and
 internationally of university-industry partnerships and
 collaborations, especially focusing on R\&D activities e.g. through
 the National Centre for Universities and Business (NCUB)\footnote{The
@@ -886,7 +931,8 @@ membership network for enterprise educators, whose purpose is to
 enable excellence in enterprise education:
 \url{https://www.enterprise.ac.uk/}}), again with strong European and
 international networks. Some of this work has been further reinforced
-by impactful work on developing digital skills by Nesta, the UK's innovation
+by impactful work on developing digital skills by Nesta, the UK's
+innovation
 foundation~\cite{nestadeliveringdigitalskills:2018,nestawhatdigitalskills:2018}.
 
 However, we recognise that there has been a significant corpus of
@@ -896,7 +942,7 @@ e.g. Computer Science Education Week
 (CSEdWeek)\footnote{\url{https://csedweek.org}} and
 CSforAll\footnote{\url{https://www.csforall.org}}. Across the UK, the
 high-profile and impactful work of organisations such as Computing At
-School (CAS), Raspberry Pi Foundation, Code Club, Technocamps, {\it et
+School (CAS), Technocamps, Raspberry Pi Foundation, Code Club, {\it et
 al\/}., has led to a \pounds84m investment in 2018 for a National
 Centre for Computing Education\footnote{See:
 \url{https://teachcomputing.org/}} in England. This has also been
@@ -975,7 +1021,7 @@ evidence base and informing policy; supporting degree/qualifications
 accreditation and standards alongside key professional bodies; as well
 as changing the wider perception -- and economic, societal and
 cultural importance -- of `ICT', `digital', `coding' and other cognate
-skills. Whilst it is clear these goals will not be fully completed in
+skills. Whilst it is clear these goals will not be fully achieved in
 a 3-5 year timescale, the IoC will provide a strong
 foundation for continued work in this area.
 
@@ -996,7 +1042,7 @@ the UK~\cite{DfE2018d}, but any mistakes are the authors' alone.
 % number - used to balance the columns on the last page
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
-\IEEEtriggeratref{54}
+\IEEEtriggeratref{56}
 % The "triggered" command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
 
